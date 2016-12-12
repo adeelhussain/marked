@@ -12,7 +12,7 @@
             JSON.stringify(marked('__This is bold text__\n**This is bold text**'));
 </script>
 </body>
-<textarea id="input" onblur="output.innerHTML = marked(this.value)"></textarea>
+<textarea id="input" onblur="output.innerHTML = JSON.stringify(marked(this.value))"></textarea>
 <div id="output">
 
 </div>
